@@ -1,0 +1,68 @@
+<!--Note:The template file will be copied to a new file. When you change the code of the template file you can create new file with this base code. -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login Portal</title>
+    <style>
+        body {
+            background-color: #D3D3D3;
+            color: white;
+            font-family: Arial, sans-serif;
+            text-align: center;
+        }
+        .login-container {
+            margin-top: 100px;
+            max-width: 300px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+        #logo {
+            max-width: 100%;
+            height: auto;
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+            margin-bottom: 20px;
+        }
+        input {
+            width: calc(100% - 22px); /* Adjusted width to fit on the same line */
+            padding: 10px;
+            margin-bottom: 10px;
+        
+        }
+        #signInButton {
+            background-color: black;
+            color: white;
+            padding: 10px;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <div class="login-container">
+        <img id="logo" src="https://estatemanagerscoalition.com/wp-content/uploads/2019/07/Burgess-Logo-Transparent-large.png" alt="Logo" >
+        <form id="loginForm">
+            <input type="text" placeholder="UserID" id="username">
+            <input type="password" placeholder="Password" id="password">
+           
+            </label>
+            <button type="button" id="signInButton" onclick="validateCredentials()">Sign On</button>
+        </form>
+    </div>
+
+    <script>
+        function validateCredentials() {
+            var username = document.getElementById('username').value;
+            var password = document.getElementById('password').value;
+
+            if (username === 'Cheryl' && password === 'Clooney45') {
+                 window.location.href = 'Dashbord.html';
+            } else {
+                alert('We didn\'t recognize the username or password you entered. Please try again.');
+            }
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Breast Surgery Department - Notification Dashboard</title>
+    <style>
+        body {
+            font-family: Tahoma, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f5f5f5;
+        }
+        .container {
+            max-width: 800px;
+            margin: 20px auto;
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        h1 {
+            text-align: center;
+        }
+        .notification {
+            background-color: #eaf6ff;
+            border-left: 4px solid #007bff;
+            padding: 10px;
+            margin-bottom: 10px;
+            border-radius: 4px;
+        }
+        .watermark {
+            position: fixed;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            opacity: 0.2;
+            pointer-events: none;
+            z-index: -1;
+            padding: 20px;
+           max-width: 80%; /* Adjust the maximum width as needed */
+            width: auto; /* Set width to auto to maintain aspect ratio */
+        }
+        header {
+            background-color:  #1bbfde;
+            color: #fff;
+            padding: 20px;
+            text-align: center;
+            margin: 0;
+        }
+        nav {
+            background-color:  #1bbfde;
+            color: #fff;
+            text-align: center;
+            position: fixed;
+            top: 0;
+            left: -250px;
+            height: 100%;
+            width: 250px;
+            transition: all 0.3s ease;
+            z-index: 1000;
+            padding-top: 60px;
+        }
+        nav.show {
+            left: 0;
+        }
+        nav.hide {
+            left: -250px;
+        }
+        nav a {
+            display: block;
+            color: #fff;
+            text-decoration: none;
+            padding: 10px 0;
+            border-bottom: 1px solid #fff;
+        }
+        .container {
+            max-width: 960px;
+            margin: 20;
+            padding: 0 20px;
+        }
+        .container {
+            max-width: 800px;
+            margin: 20px auto;
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        h1 {
+            text-align: center;
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 20px;
+        }
+        th, td {
+            border: 1px solid #ddd;
+            padding: 8px;
+            text-align: left;
+        }
+        th {
+            background-color: #f2f2f2;
+        
+         }
+        .menu-toggle {
+            cursor: pointer;
+            position: absolute;
+            top: 20px;
+            left: 20px;
+            z-index: 1500;
+        }
+        .menu-icon {
+            width: 30px;
+            height: 4px;
+            background-color: ;
+            margin: 6px 0;
+            transition: all 0.3s ease;
+        }
+        .menu-icon.active .bar1 {
+            transform: rotate(-45deg) translate(-5px, 6px);
+        }
+        .menu-icon.active .bar2 {
+            opacity: 0;
+        }
+        .menu-icon.active .bar3 {
+            transform: rotate(45deg) translate(-5px, -6px);
+        }
+        .footer {
+            background-color: #333;
+            color: #fff;
+            padding: 10px 10;
+            text-align: center;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+            height: 40px;
+            margin: 0px;
+            margin-top: 10px;
+        }
+          .slide-in {
+    animation: slide-in 2s forwards;
+  }
+
+  @keyframes slide-in {
+    from { transform: translateX(-100%); opacity: 0; }
+    to { transform: translateX(0); opacity: 1; }
+  }  
+    </style>
+</head>
+<body>
+    <header>
+        <div class="menu-toggle" onclick="toggleMenu()">
+
+            <div class="menu-icon">
+
+                <img width="50" height="50" src="https://img.icons8.com/ios-filled/50/menu--v1.png" alt="menu--v1"/>
+                <div class="bar1"></div>
+                <div class="bar2"></div>
+                <div class="bar3"></div>
+            </div>
+        </div><br>
+        <h1></h1>
+    </header>
+    <nav id="side-menu" class="hide">
+        <a href="Dashbord.html" onclick="toggleMenu()">Dashboard</a>
+        
+   
+         <a href="VoyageVisualization.html" onclick="toggleMenu()">Voyage Visualization</a>
+        
+        <a href="index.html" onclick="toggleMenu()">Log Out</a>    </nav>
+
+    <h1><span style="color: #006869;"></h1>
+    <div class="container">
+        <h1>MOONLIGHT II<br>Motor yacht</h1>
+         <div class="notification">
+            <h3>DESCRIPTION: </h3>                The 91.4m (299.9ft) MOONLIGHT II is a 3,052GT yacht that welcomes 36 guests in 18 cabins across three of her five decks with an all-decks elevator to connect them all. The steel hull and aluminium superstructure are built to ABS classification as a Class 1 Passenger Ship.<br>
+
+<br>The yacht was delivered by Neorion Syros Shipyard in Greece in 2005 to a single design concept by Alpha Marine/H Poulias and extensively refitted and refurbished in 2020. Currently she is one of very few charter yachts that can welcome parties of this size.<br>
+
+<br>Her sun deck has a raised jacuzzi encircled by sunpads forward, two huge L-shaped wet bars and a dayhead shaded by a removable awning and a circular sun lounge aft that used to be a touch-and-go helipad and could be returned to that service.<br>
+
+<br>Entertainment is the key theme on the bridge deck. There are two open-air dining tables aft seating all guests and walkaround sidedecks. Inside there is a roulette table, fully equipped bar, a convivial lounge with nightclub sound and lighting systems and a hardwood floor for dancing.<br>
+
+<br>The upper deck is home to the yacht’s tenders and jetskis and offers expansive operational space for additional water toys and deck storage items. Inside aft there is the yacht’s cinema, which doubles as a library and reading room with the blackout blinds lifted.<br>
+
+<br>Entering the saloon from the sun lounge on the main deck aft, there is a piano lounge aft of a large lounge space, with wraparound white leather sofas served by a sit-up bar. Forward of that is the formal dining room with 36 guests sharing two tables.<br>
+
+<br>Midships on the lower deck there is a wellness spa around a central spa pool with a fully equipped gym, massage room, two saunas, two steam rooms, beauty salon, changing rooms with showers and heads and a beach club and bar with a generous sea terrace to starboard. This is in addition to a large beach club aft with a semi-circular wet bar, sea terraces port and starboard, dayhead and a TV lounge.<br>
+
+<br>The owner’s suite is forward on the upper deck and features panoramic views forward, over the owner’s private raised jacuzzi nestling amid sunpads, his-and-hers en suites and walk-in wardrobes, and an owner’s office. Adjacent is a twin cabin for the owner’s guests, children or staff. The upper deck is also home to two double suites and two twin suites.<br>
+
+<br>There is a VIP suite with private lounge and a twin cabin on the bridge deck, while on the main deck six double suites and four twin suites complete her accommodation. MOONLIGHT II also sleeps up to 35 crew for excellent service levels.<br>
+
+<br>Twin 2,750hp Caterpillar diesel engines give the yacht a top speed of 13 knots, a cruising speed of 12 knots and a transatlantic range of 5,000nm. Quantum zero speed stabilisers ensure comfort on arrival.<br>
+                <br>
+                
+            <p><strong>Date:</strong> August 31, 2024</p>
+        </div>
+        <br><strong>Please find below a visual representation of both the yacht and location:</strong>
+        <br>
+        Congratulations on your purchase of the luxurious MOONLIGHT II We are thrilled to present you with a detailed visual tour of your new yacht. This video will guide you through the exquisite craftsmanship, state-of-the-art amenities, and stunning design that make MOONLIGHT II truly one of a kind.
+
+        
+        <!-- Add more notifications as needed -->
+
+        <video  width="640" height="360" class="media-fit media-fit--contain" controls="" playsinline="" controlslist="nodownload" src="https://player.vimeo.com/progressive_redirect/playback/156237520/rendition/1080p/file.mp4?loc=external&amp;oauth2_token_id=1612235860&amp;signature=00cb0671c5d4598fb9a07d0fa245aaa9a6b0dc6ef4787e55d0e1ed03f94ee122"><source data-src="https://player.vimeo.com/progressive_redirect/playback/156237520/rendition/1080p/file.mp4?loc=external&amp;oauth2_token_id=1612235860&amp;signature=00cb0671c5d4598fb9a07d0fa245aaa9a6b0dc6ef4787e55d0e1ed03f94ee122" data-media="(max-width: 1920px)" media="(max-width: 1920px)" type="video/mp4"><source data-src="https://player.vimeo.com/progressive_redirect/playback/156237520/rendition/360p/file.mp4?loc=external&amp;oauth2_token_id=1612235860&amp;signature=aa705f5d40facaff903cbaf20ee6c469dea0b8d55539a7890c89de9d3f836fde" data-media="(max-width: 640px)" media="(max-width: 640px)" type="video/mp4"><source data-src="https://player.vimeo.com/progressive_redirect/playback/156237520/rendition/540p/file.mp4?loc=external&amp;oauth2_token_id=1612235860&amp;signature=1d3e74fd044259a3fd234c398a34cf1e53bbdb19d3b0094b2e4c15270ea30443" data-media="(max-width: 960px)" media="(max-width: 960px)" type="video/mp4"><source data-src="https://player.vimeo.com/progressive_redirect/playback/156237520/rendition/720p/file.mp4?loc=external&amp;oauth2_token_id=1612235860&amp;signature=b5519adb5ddf5ff81e1157975d866dc01baa2b4cd9fe5d59b194386c8d676dbd" data-media="(max-width: 1280px)" media="(max-width: 1280px)" type="video/mp4"><source data-src="https://player.vimeo.com/external/156237520.m3u8?s=276f698f6bc71bcfe2cfb79e2f33475bd4eec1b5&amp;oauth2_token_id=1612235860" media="" type="video/mp4"></video>
+
+       
+</video>
+<br>As you explore this visual journey, imagine the countless adventures and unforgettable moments awaiting you on the open seas. Welcome to the Burgess Yacht family, where your dreams set sail.
+<br><br>
+
+    </div>
+     <footer class="footer">
+         <p> Copyright &copy; Burgess Yacht Agency. All rights reserved.</p>
+    </footer>
+     <img src="https://estatemanagerscoalition.com/wp-content/uploads/2019/07/Burgess-Logo-Transparent-large.png" alt="Watermark" class="watermark">
+
+    <script>
+         ;
+
+        function toggleMenu() {
+            var sideMenu = document.getElementById('side-menu');
+            sideMenu.classList.toggle('show');
+            sideMenu.classList.toggle('hide');
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,299 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Department of Breast Surgery</title>
+    <style>
+        /* Add your CSS styles here */
+        body {
+            font-family: Tahoma-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f2f2f2;
+            position: relative;
+        }
+        .watermark {
+            position: fixed;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            opacity: 0.2;
+            pointer-events: none;
+            z-index: -1;
+            padding: 20px;
+           max-width: 80%; /* Adjust the maximum width as needed */
+            width: auto; /* Set width to auto to maintain aspect ratio */
+        }
+        header {
+            background-color: #1bbfde;
+            color: #fff;
+            padding: 20px;
+            text-align: center;
+        }
+        nav {
+            background-color: #1bbfde;
+            color: #fff;
+            text-align: center;
+            position: fixed;
+            top: 0;
+            left: -250px;
+            height: 100%;
+            width: 250px;
+            transition: all 0.3s ease;
+            z-index: 1000;
+            padding-top: 60px;
+        }
+        nav.show {
+            left: 0;
+        }
+        nav.hide {
+            left: -250px;
+        }
+        nav a {
+            display: block;
+            color: #fff;
+            text-decoration: none;
+            padding: 10px 0;
+            border-bottom: 1px solid #fff;
+        }
+        .container {
+            max-width: 960px;
+            margin: 20px auto;
+            padding: 0 20px;
+        }
+        h1 {
+            color: #333;
+            text-align: center;
+        }
+        p {
+            color: #555;
+            line-height: 1.6;
+        }
+        .menu-toggle {
+            cursor: pointer;
+            position: absolute;
+            top: 20px;
+            left: 20px;
+            z-index: 1500;
+        }
+        .menu-icon {
+            width: 30px;
+            height: 4px;
+            background-color: ;
+            margin: 6px 0;
+            transition: all 0.3s ease;
+        }
+        .menu-icon.active .bar1 {
+            transform: rotate(-45deg) translate(-5px, 6px);
+        }
+        .menu-icon.active .bar2 {
+            opacity: 0;
+        }
+        .menu-icon.active .bar3 {
+            transform: rotate(45deg) translate(-5px, -6px);
+        }
+        .footer {
+            background-color: #333;
+            color: #fff;
+            padding: 10px 0;
+            text-align: center;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+            height: 40px;
+            margin: 0px;
+        }
+          .slide-in {
+    animation: slide-in 2s forwards;
+  }
+
+  @keyframes slide-in {
+    from { transform: translateX(-100%); opacity: 0; }
+    to { transform: translateX(0); opacity: 1; }
+  }  
+  .scrolling-text {
+    white-space: nowrap;
+    overflow: hidden;
+    width: 100%;
+    animation: scrolling 20s linear infinite;
+  }
+
+  .scrolling-content {
+    display: inline-block;
+    animation: scroll-left 10s linear infinite;
+  }
+
+   @keyframes scrolling {
+    0% { transform: translateX(100%); }
+    100% { transform: translateX(-100%); }
+  }
+  .highlight2 {
+  font-size: 1.2em; /* Increase font size */
+  font-family: Tahoma, serif; /* Change font family */
+  font-weight: bold; /* Make the text bold, if desired */
+  color: #233968; /* Change the text color */
+  /* You can add more styling here, such as text decoration, etc. */
+}
+    </style>
+</head>
+<body>
+   
+    <header>
+        <div class="menu-toggle" onclick="toggleMenu()">
+
+            <div class="menu-icon">
+
+                <img width="50" height="50" src="https://img.icons8.com/ios-filled/50/menu--v1.png" alt="menu--v1"/>
+                <div class="bar1"></div>
+                <div class="bar2"></div>
+                <div class="bar3"></div>
+            </div>
+        </div>
+
+        <h1><span style="color:white;">Burgess Yacht llc</h1>
+    </header>
+    <nav id="side-menu" class="hide">
+          <a href="Dashbord.html" onclick="toggleMenu()">Dashboard</a>
+        
+   
+         <a href="VoyageVisualization.html" onclick="toggleMenu()">Voyage Visualization</a>
+        
+        <a href="index.html" onclick="toggleMenu()">Log Out</a>    </nav>
+    <div class="container">
+        <h2></h2>
+      <div class="scrolling-text">
+  <div class="scrolling-content" id="date-time"></div>
+</div> 
+    <div class="slide-in"><em><img width="94" height="94" src="https://img.icons8.com/3d-fluency/94/user-group-man-woman--v3.png" alt="user-group-man-woman--v3"/>Dear Esteemed Co-purchasers,
+
+<br>We are delighted to present your exclusive portal designed to optimize the stewardship of your maritime investment. This dashboard serves as a centralized nexus, offering seamless access to critical operational data, fiscal analytics, and real-time navigational intelligence.<br>
+
+<br>Within this bespoke environment, you will discover tools tailored to enhance your asset oversight, ensuring each nautical venture is executed with unparalleled precision. We encourage you to explore the comprehensive modules, which are meticulously designed to streamline your co-ownership experience.<br>
+
+<br>Please proceed at your convenience to review the integrated itineraries, maintenance protocols, and collaborative financial frameworks established for your vessel.<br>
+
+<br>Navigate with confidence, knowing that every element of your dashboard is crafted to support the highest standard of yacht management.<br>
+
+<br>Welcome aboard, and may your journeys be as smooth as the seas you sail.</em>
+</div>
+
+   
+
+<p class="flex-container">
+  <span class="bold-text">CO-PURCHASER(S):</span>
+  <span class="light-text" style="margin-left: 10px;"><strong><span class="highlight2">GEORGE TIMOTHY CLOONEY & CHERYL MORTENSENE</strong></span>
+
+ <br><span class="bold-text">REFERENCE NUMBER: </span>
+  <span class="light-text" style="margin-left: 10px;"><strong><span class="highlight2">24-08-SFX500-GC-001
+</strong></span>
+
+<br>
+
+
+<hr>
+  
+<hr>
+
+ 
+
+
+
+        </ul>
+         <h2></h2>
+        </p>
+    
+    <br><span class="highlight2">MOONLIGHT II<br>Motor yacht</span>
+        
+            
+            <br><br><strong>Built</strong>
+            <br>2005 (refitted 2020), Neorion Syros Shipyards, Greece
+
+    <p class="text-right">
+      <hr>
+      <br><strong>Length</strong>
+            <br>91.4m (299.9ft)
+
+    <p class="text-right">
+      <hr>
+      Selling Price / EUR 68,000,000
+      <hr>
+      <em> About MOONLIGHT II</em>
+       <ul>
+            <li>Crew:<span class="highlight2">      36</li></span>
+             <li>Beam: <span class="highlight2">14.4m (47.2ft)</li></span>
+            <li>Draft:<span class="highlight2"> 4.2m (13.8ft)</li></span>
+             <li>Gross tonnage:<span class="highlight2"> 3,052</li></span>
+             <li>Maximum speed: <span class="highlight2">13 knots</li></span>
+            <li>Cruising speed:<span class="highlight2"> 12 knots</li></span>
+             <li>Fuel consumption at cruising speed:<span class="highlight2"> 500 litres per hour</li></span>
+             <li>Cabin types: <span class="highlight2">18 (10 × double, 8 × twin)</li></span>
+            <li>Engines:<span class="highlight2"> 2 × 2,750hp Caterpillar</li></span>
+             <li>Propulsion:<span class="highlight2"> Twin screw diesel yacht</li></span>
+                <br></ul>
+
+      <em> <strong>Key features</strong></em>
+       <ul>
+            <li>Capacity for 36 guests in 18 cabins, including indoor and outdoor dining spaces for 36 guests</li>
+             <li>Private owner’s deck with jacuzzi</em>
+</li>
+            <li>Large beach club with fold-out sea terraces</em></li>
+ <li>Large jacuzzi on sun deck</li>
+             <li>Zero speed stabilisers</li>
+            <li>Expansive spa and gym facilities with health and beauty centre</em>
+</li>
+ <li>Fully equipped gym</li>
+ <li>Guest and crew elevator serving all decks</li>
+             <li>Cinema</li>
+            <li>Approved RYA training centre</li>
+ <li>Exceptional charter yacht</li>
+  <li>Huge volume with versatile spaces</li>
+    <li>Disabled access cabins</li>
+            
+                <br></ul>
+        <em><strong>Dessignated Representative</strong></em>
+                <li>
+Abbey Brown</li>
+            
+  </p>
+        <h2></h2>
+        <p></p>
+       
+        <p></p>
+    </div>
+    <footer class="footer">
+        <p> Copyright &copy; Burgess Yacht llc Agency. All rights reserved.</p>
+    </footer>
+     <img src="https://estatemanagerscoalition.com/wp-content/uploads/2019/07/Burgess-Logo-Transparent-large.png" alt="Watermark" class="watermark">
+
+
+    <script>
+          function updateDateTime() {
+  const now = new Date();
+  const options = { weekday: 'long', year: 'numeric', month: 'long', day: 'numeric', hour: 'numeric', minute: 'numeric', second: 'numeric', hour12: false, timeZone: '' };
+  const formattedDateTime = now.toLocaleDateString('ko-KR', options);
+  document.getElementById('date-time').textContent = formattedDateTime;
+}
+
+// Update the date and time every second
+setInterval(updateDateTime, 1000);
+
+// Initial call to display the date and time immediately
+updateDateTime();
+
+        function toggleMenu() {
+            var sideMenu = document.getElementById('side-menu');
+            sideMenu.classList.toggle('show');
+            sideMenu.classList.toggle('hide');
+        }
+    </script>
+</body>
+</html>
+
+
+
+
+
+
+
+
